@@ -46,7 +46,7 @@ public class DepartmentListController implements Initializable {
 	
 	
 	@Override
-	public void initialize(URL arg0, ResourceBundle arg1) {
+	public void initialize(URL url, ResourceBundle rb) {
 		initializeNodes();
 	}
 
@@ -59,7 +59,7 @@ public class DepartmentListController implements Initializable {
 		tableViewDepartment.prefHeightProperty().bind(stage.heightProperty());
 	}
 	
-	public void updateTable() {
+	public void updateTableView() {
 		if(service == null) {
 			throw new IllegalStateException();
 		}
